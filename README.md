@@ -8,7 +8,7 @@ There are 2 spiders in this project:
 
 - `LocalDownloadSpider` which writes the HTML content of any information useful to this project and writes them to the `html` folder. These files are included for convenience, but that's how they got there. It also has the benefit of being able to write parsers without being connected to the internet (yay!)
 
-- `KiranicoSpider` which goes through those files in the `html` folder and scrapes that data with specialized parsers and both writes this data to CSV files as well as creating tables for the data and writing that data to those files, if has a connection to Postgresql.
+- `KiranicoSpider` which goes through those files in the `html` folder and scrapes that data with specialized parsers and both writes this data to CSV files as well as creating tables for the data and writing that data to those tables, if it has a connection to Postgresql.
 
 
 ## Running Spiders
