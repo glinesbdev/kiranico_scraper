@@ -19,7 +19,7 @@ class SerializedItem(QueryableItem):
 
             if isinstance(value, list):
                 for i, item in enumerate(value):
-                    value[i] = setter(self.__value_or_default(item, serializer))
+                    value[i] = self.__value_or_default(setter(item), serializer)
 
             # This is here for a really annoying reason: when using scrapy's ItemLoader#add_`whatever`
             # methods, it adds it to the loader as a list and not its raw value. So here,
